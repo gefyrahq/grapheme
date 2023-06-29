@@ -9,7 +9,7 @@ with codecs_open('README.rst', encoding='utf-8') as f:
 
 
 extra_files = []
-data_file = Path('grapheme_break_property.json')
+data_file = 'grapheme_break_property.json'
 extra_files.append(data_file)
 
 
