@@ -1,1 +1,1 @@
-include grapheme/data/*.json
+include grapheme/grapheme_break_property.json
