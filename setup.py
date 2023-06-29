@@ -1,4 +1,4 @@
-import os
+from pathlib import Path
 from codecs import open as codecs_open
 from setuptools import setup, find_packages
 
@@ -9,7 +9,7 @@ with codecs_open('README.rst', encoding='utf-8') as f:
 
 
 extra_files = []
-data_file = os.path.join('data', 'grapheme_break_property.json')
+data_file = Path('grapheme_break_property.json')
 extra_files.append(data_file)
 
 
