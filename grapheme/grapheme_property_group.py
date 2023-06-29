@@ -1,5 +1,5 @@
 import json
-import os
+import importlib
 import string
 from enum import Enum
 
@@ -94,7 +94,7 @@ class LeafNode:
     def get_value(self, _key):
         return self.group
 
-with open(os.path.join(os.path.dirname(__file__), "data/grapheme_break_property.json"), 'r') as f:
+with importlib.resources.open_text("grapheme", "data/grapheme_break_property.json") as f:
     data = json.load(f)
 
     assert len(data) == len(GraphemePropertyGroup) - 1
